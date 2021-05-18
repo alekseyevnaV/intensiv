@@ -1,0 +1,77 @@
+@media (max-width: 992px) {
+    .header {
+        &__text {
+            font-size: 16px;
+        }
+        &__text-lg {
+            font-size: 30px;
+        }
+        &__item {
+            text-align: center;
+        }
+    }
+    .if-you {
+        &__img {
+            width: 60px;
+            top: 20px;
+            left: -20px;
+        }
+        &__title {
+            font-size: 30px;
+            padding-top: 90px;
+        }
+    }
+    .tariffs {
+        &__img {
+            right: -18px;
+            width: 120px;
+        }
+        &-block {
+            display: block;
+            text-align: center;
+        }
+    }
+    .waiting-you {
+        &__indicator-text {
+            margin-top: 25px;
+        }
+        &__email {
+            display: flex;
+            justify-content: center;
+        }
+        &__indicator-value {
+            font-size: 30px;
+        }
+    }
+    .footer__list {
+        text-align: left !important;
+    }
+    .btn-link {
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    .img-head-bottom {
+        justify-content: center !important;
+        margin-top: 40px;
+    }
+    .button-md-center {
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        z-index: 2;
+        width: 128px;
+        background: #4c3d74;
+        padding: 12px;
+    }
+    .description-center-md {
+        text-align: center;
+    }
+    li.nav-item+.nav-item {
+        margin-top: 10px;
+    }
+}

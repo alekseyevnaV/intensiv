@@ -1,0 +1,283 @@
+$color-meteorite:#4C3D74;
+$color-purple:#A387C4;
+$navbar-light-toggler-bg: white;
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+//HEADER
+.header {
+    background-color: $color-meteorite;
+    &__text-md {
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+    &__text-lg {
+        font-weight: bold;
+        font-size: 50px;
+        color: white;
+    }
+    .nav-link {
+        position: relative;
+    }
+    .nav-link:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        transition: width 0.3s ease;
+        background-color: white;
+        right: 0;
+        margin: auto;
+    }
+    .nav-link:hover:before {
+        width: 100%;
+    }
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    color: white !important;
+    padding: 0;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    position: absolute;
+    top: -15px;
+    right: 9px;
+}
+
+.btn-fill {
+    background: #A387C4;
+    border-radius: 30px;
+    color: white !important;
+    font-weight: bold;
+    padding: 16px 60px;
+}
+
+.btn-outline:hover {
+    background: #A387C4;
+}
+
+.btn-outline {
+    border: 3px solid #A387C4;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: white !important;
+    font-weight: bold;
+    background: $color-meteorite;
+    padding: 16px 60px;
+}
+
+//IF-YOU
+.if-you {
+    &__title {
+        font-weight: bold;
+        font-size: 50px;
+        color: #504178;
+        padding-top: 160px;
+        padding-bottom: 46px;
+        text-align: center;
+    }
+    &__text {
+        border: 3px solid $color-meteorite;
+        border-radius: 30px;
+        font-weight: 500;
+        color: $color-meteorite;
+        background: #F2EEF7;
+        padding: 35px 30px 31px 58px;
+        position: relative;
+        margin-right: 30px;
+    }
+    &__subtext {
+        font-weight: bold;
+        font-size: 20px;
+        color: $color-meteorite;
+    }
+    &__img {
+        position: absolute;
+        z-index: 1;
+        top: 16px;
+        left: -28px;
+    }
+}
+
+//WAITING-YOU
+.waiting-you {
+    background: $color-meteorite;
+    padding-bottom: 170px;
+    &__indicator-value {
+        font-size: 50px;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin-top: 16px;
+    }
+    &__indicator-text {
+        color: white;
+    }
+    &__email {
+        font-weight: bold;
+        color: white;
+    }
+}
+
+//ACCORDION
+.accordion {
+    border: none;
+    border-top: 3px solid $color-meteorite;
+    margin-top: 40px;
+    &-item {
+        background: white;
+        border: none;
+        position: relative;
+        padding: 0;
+        border-bottom: 2px solid $color-meteorite;
+    }
+    &-header {
+        margin-bottom: 0;
+    }
+    &-button {
+        font-weight: 500;
+        font-size: 18px;
+        color: $color-meteorite !important;
+        text-decoration: none !important;
+        padding: 27px 50px 27px 0
+    }
+}
+
+.accordion-button[aria-expanded="false"]::after {
+    content: url("../images/plus.svg");
+    position: absolute;
+    top: 30px;
+    right: 44px;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: url("../images/minus.svg");
+    position: absolute;
+    top: 33px;
+    right: 33px;
+}
+
+.accordion-button::after {
+    background-image: none;
+    width: 0;
+    transition: none;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+//TARIFFS
+.tariffs {
+    background: $color-meteorite;
+    padding-bottom: 150px;
+    &__text {
+        color: $color-meteorite;
+        margin-top: 15px;
+        list-style: none;
+    }
+    &__text--sm {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    &__text--minus::before {
+        content: url('../images/minus.svg');
+        padding-right: 9px;
+    }
+    &__text--plus::before {
+        content: url('../images/plus.svg');
+        padding-right: 9px;
+    }
+    &-card {
+        background: #F2EEF7;
+        border: 3px solid $color-meteorite;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding-left: 36px;
+        position: relative;
+        padding-right: 20px;
+    }
+    &__img {
+        position: absolute;
+        right: -54px;
+        bottom: auto;
+        top: -41px;
+        z-index: 1;
+    }
+    &__btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -18px;
+    }
+}
+
+//FOOTER
+.footer {
+    background: #251933;
+    &__text {
+        color: white;
+        font-weight: bold;
+        padding-top: 15px;
+        text-decoration: underline;
+    }
+    &__text-link {
+        color: white !important;
+    }
+}
+
+#up-button {
+    cursor: pointer;
+}
+
+.questions__text {
+    font-weight: bold;
+    font-size: 20px;
+    color: $color-meteorite;
+}
+
+.intensive-programm__text {
+    font-weight: bold;
+    font-size: 20px;
+    color: $color-meteorite;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+h2 {
+    font-size: 50px;
+    color: #504178;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 140px;
+}
+
+.img-head-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+@import '../styles/media.scss'
